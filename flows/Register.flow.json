@@ -1,0 +1,289 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "9801a7321c",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-register"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "962ddc4a83",
+      "name": "RegisterStep1",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'cancelar'",
+          "node": "ConversationChoice"
+        },
+        {
+          "condition": "true",
+          "node": "RegisterStep2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-HcXu2E"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"nome\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "6ef287568a",
+      "name": "ConversationChoice",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Conversation.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-yftIne"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-8488de",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-register",
+      "flow": "skills/choice-8488de.flow.json",
+      "next": [
+        {
+          "caption": "User picked [ok]",
+          "condition": "temp['skill-choice-ret-2fo7n97b27'] == \"ok\"",
+          "node": "RegisterStep1"
+        },
+        {
+          "caption": "User picked [Cancelar]",
+          "condition": "temp['skill-choice-ret-2fo7n97b27'] == \"Cancelar\"",
+          "node": "ConversationChoice"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "PickTopicError"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "e8d6d5ee58",
+      "name": "PickTopicError",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-register"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-1GFLmI"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "d541f89b0f",
+      "name": "RegisterStep2",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'cancelar'",
+          "node": "ConversationChoice"
+        },
+        {
+          "condition": "true",
+          "node": "RegisterStep3"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-8SfKR5"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"fone\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "7de6b876bc",
+      "name": "RegisterStep3",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'cancelar'",
+          "node": "ConversationChoice"
+        },
+        {
+          "condition": "true",
+          "node": "RegisterConfirmation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-k2IVXT"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"endereco\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "d192d823be",
+      "name": "RegisterConfirmation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-comfirmRegister"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-jNEcB2"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "7b1e78ed7b",
+      "name": "CallingApi",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Conversation.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Dlk2bB"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-2c1f42",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-comfirmRegister",
+      "flow": "skills/choice-2c1f42.flow.json",
+      "next": [
+        {
+          "caption": "User picked [sim]",
+          "condition": "temp['skill-choice-ret-nzg3ld8ck0'] == \"sim\"",
+          "node": "CallAPI-register"
+        },
+        {
+          "caption": "User picked [nao]",
+          "condition": "temp['skill-choice-ret-nzg3ld8ck0'] == \"nao\"",
+          "node": "choice-replayRegister"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "PickTopicError2"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "4fa429149f",
+      "name": "PickTopicError2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-comfirmRegister"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-fOUoDs"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-ae7b02",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-replayRegister",
+      "flow": "skills/choice-ae7b02.flow.json",
+      "next": [
+        {
+          "caption": "User picked [sim]",
+          "condition": "temp['skill-choice-ret-9emdwrm7zu'] == \"sim\"",
+          "node": "#registerStep1"
+        },
+        {
+          "caption": "User picked [nao]",
+          "condition": "temp['skill-choice-ret-9emdwrm7zu'] == \"nao\"",
+          "node": "ConversationChoice"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "PickTopicError3"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "195c5584f1",
+      "name": "PickTopicError3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-replayRegister"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-fOUoDs"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "7d8d8ebd08",
+      "name": "RegisterEnd",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Conversation.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-cND2cv"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"chave\",\"value\":\"{{temp.response.body.vulnerable.access_key}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-02794d",
+      "type": "skill-call",
+      "skill": "CallAPI",
+      "name": "CallAPI-register",
+      "flow": "skills/CallAPI-02794d.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.valid",
+          "node": "RegisterEnd"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.valid",
+          "node": "CallingApi"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

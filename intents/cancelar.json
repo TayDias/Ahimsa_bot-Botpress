@@ -1,0 +1,15 @@
+{
+  "name": "cancelar",
+  "utterances": {
+    "pt": [
+      "cancelar",
+      "parar",
+      "sair",
+      "pular"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

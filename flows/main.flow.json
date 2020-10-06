@@ -1,0 +1,109 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'presentation'",
+          "node": "askName"
+        },
+        {
+          "condition": "true",
+          "node": "unknown"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "f89ea66cb9",
+      "name": "unknown",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-qzr7nW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a1e001f527",
+      "name": "askName",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-register"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-rAHcQh"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"apelido\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "01d36ca903",
+      "name": "ConversationChoice",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Conversation.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-yftIne"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-43726e",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-register",
+      "flow": "skills/choice-43726e.flow.json",
+      "next": [
+        {
+          "caption": "User picked [sim]",
+          "condition": "temp['skill-choice-ret-e1p0vb8uav'] == \"sim\"",
+          "node": "Register.flow.json"
+        },
+        {
+          "caption": "User picked [nao]",
+          "condition": "temp['skill-choice-ret-e1p0vb8uav'] == \"nao\"",
+          "node": "ConversationChoice"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "PickTopicError"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "c6d4daf0ec",
+      "name": "PickTopicError",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-register"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-1GFLmI"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "wkmuo2pr4g_quero_me_cadastrar",
+  "data": {
+    "action": "redirect",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "pt": []
+    },
+    "questions": {
+      "pt": [
+        "Quero me cadastrar",
+        "Quero fazer o cadastro",
+        "Quero me registrar",
+        "Fazer cadastro"
+      ]
+    },
+    "redirectFlow": "Register.flow.json",
+    "redirectNode": "choice-register",
+    "category": "global"
+  }
+}

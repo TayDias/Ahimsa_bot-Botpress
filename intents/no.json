@@ -1,0 +1,17 @@
+{
+  "name": "no",
+  "utterances": {
+    "pt": [
+      "Não",
+      "Nao",
+      "Não quero",
+      "Nao quero",
+      "Agora não",
+      "Passo"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "__qna__wkmuo2pr4g_quero_me_cadastrar",
+  "contexts": [
+    "global"
+  ],
+  "utterances": {
+    "pt": [
+      "Quero me cadastrar",
+      "Quero fazer o cadastro",
+      "Quero me registrar",
+      "Fazer cadastro"
+    ]
+  },
+  "slots": []
+}

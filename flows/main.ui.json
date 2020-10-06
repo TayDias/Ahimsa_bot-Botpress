@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "id": "entry",
+      "position": {
+        "x": 80,
+        "y": 65
+      }
+    },
+    {
+      "id": "f89ea66cb9",
+      "position": {
+        "x": 710,
+        "y": 15
+      }
+    },
+    {
+      "id": "a1e001f527",
+      "position": {
+        "x": 390,
+        "y": 5
+      }
+    },
+    {
+      "id": "01d36ca903",
+      "position": {
+        "x": 715,
+        "y": 160
+      }
+    },
+    {
+      "id": "skill-43726e",
+      "position": {
+        "x": 400,
+        "y": 200
+      }
+    },
+    {
+      "id": "c6d4daf0ec",
+      "position": {
+        "x": 85,
+        "y": 240
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "a1e001f527",
+      "sourcePort": "out0",
+      "target": "skill-43726e",
+      "points": [
+        {
+          "x": 596,
+          "y": 104
+        },
+        {
+          "x": 500,
+          "y": 193
+        }
+      ]
+    },
+    {
+      "source": "c6d4daf0ec",
+      "sourcePort": "out0",
+      "target": "skill-43726e",
+      "points": [
+        {
+          "x": 291,
+          "y": 351
+        },
+        {
+          "x": 500,
+          "y": 193
+        }
+      ]
+    },
+    {
+      "source": "entry",
+      "sourcePort": "out0",
+      "target": "a1e001f527",
+      "points": [
+        {
+          "x": 286,
+          "y": 98
+        },
+        {
+          "x": 490,
+          "y": -2
+        }
+      ]
+    },
+    {
+      "source": "entry",
+      "sourcePort": "out1",
+      "target": "f89ea66cb9",
+      "points": [
+        {
+          "x": 286,
+          "y": 141
+        },
+        {
+          "x": 810,
+          "y": 8
+        }
+      ]
+    },
+    {
+      "source": "skill-43726e",
+      "sourcePort": "out1",
+      "target": "01d36ca903",
+      "points": [
+        {
+          "x": 606,
+          "y": 273
+        },
+        {
+          "x": 815,
+          "y": 153
+        }
+      ]
+    },
+    {
+      "source": "skill-43726e",
+      "sourcePort": "out2",
+      "target": "c6d4daf0ec",
+      "points": [
+        {
+          "x": 606,
+          "y": 298
+        },
+        {
+          "x": 185,
+          "y": 233
+        }
+      ]
+    }
+  ]
+}

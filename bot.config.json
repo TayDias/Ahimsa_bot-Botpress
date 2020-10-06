@@ -1,0 +1,53 @@
+{
+  "locked": false,
+  "disabled": false,
+  "private": false,
+  "details": {
+    "website": "https://github.com/TayDias",
+    "phoneNumber": "",
+    "termsConditions": "",
+    "emailAddress": "tay.mdias67@gmail.com",
+    "avatarUrl": "",
+    "coverPictureUrl": "",
+    "privacyPolicy": ""
+  },
+  "$schema": "../../bot.config.schema.json",
+  "description": "",
+  "active": true,
+  "version": "12.10.5",
+  "author": "Botpress, Inc.",
+  "license": "AGPL-3.0",
+  "imports": {
+    "modules": [],
+    "incomingMiddleware": [],
+    "outgoingMiddleware": [],
+    "contentTypes": [
+      "builtin_action-button",
+      "builtin_card",
+      "builtin_carousel",
+      "builtin_image",
+      "builtin_single-choice",
+      "builtin_text",
+      "dropdown"
+    ]
+  },
+  "dialog": {
+    "timeoutInterval": "5m"
+  },
+  "logs": {
+    "expiration": "1 week"
+  },
+  "defaultLanguage": "pt",
+  "languages": [
+    "pt"
+  ],
+  "id": "ahimsa",
+  "name": "Ahimsa",
+  "pipeline_status": {
+    "current_stage": {
+      "id": "prod",
+      "promoted_on": "2020-09-16T03:50:49.983Z",
+      "promoted_by": "system"
+    }
+  }
+}

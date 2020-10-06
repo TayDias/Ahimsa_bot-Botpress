@@ -1,0 +1,226 @@
+[
+  {
+    "id": "builtin_text-qzr7nW",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Desculpe, não compreendi o que disse."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-27T22:22:39.382Z",
+    "modifiedOn": "2020-08-27T22:22:39.382Z"
+  },
+  {
+    "id": "builtin_text-rAHcQh",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Olá, meu nome é Ahimsa. Qual é o seu?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-27T22:25:27.978Z",
+    "modifiedOn": "2020-08-27T22:25:27.978Z"
+  },
+  {
+    "id": "builtin_text-Mv_S2d",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Olá {{temp.apelido}}!\nVocê deseja se cadastrar na nossa comunidade? \nSem pressões, você pode permanecer anônimo se desejar :)"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-27T22:55:40.233Z",
+    "modifiedOn": "2020-08-27T23:57:52.234Z"
+  },
+  {
+    "id": "builtin_text-yftIne",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Tudo bem, vamos pular o cadastro então."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T00:02:14.659Z",
+    "modifiedOn": "2020-08-28T02:48:17.614Z"
+  },
+  {
+    "id": "builtin_text-GMFuQe",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Certo, vamos fazer o cadastro. Para parar você pode digitar \"cancelar\" a qualquer momento, Ok?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T00:08:08.366Z",
+    "modifiedOn": "2020-08-28T00:08:08.366Z"
+  },
+  {
+    "id": "builtin_text-JSdsX2",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Tudo bem, vamos pular o cadastro então."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T00:45:29.932Z",
+    "modifiedOn": "2020-08-28T00:45:29.932Z"
+  },
+  {
+    "id": "builtin_text-HcXu2E",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Ótimo! Por favor, me informe seu nome completo",
+      "variations$pt": [
+        ""
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T00:46:26.133Z",
+    "modifiedOn": "2020-08-28T00:46:30.483Z"
+  },
+  {
+    "id": "builtin_text-1gPgPz",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Você quer falar com um especialista no assunto?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T00:48:12.558Z",
+    "modifiedOn": "2020-08-28T00:48:12.558Z"
+  },
+  {
+    "id": "builtin_text-Z0kIMV",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Ok. Esta interação acabou."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T00:53:00.173Z",
+    "modifiedOn": "2020-08-28T03:09:06.604Z"
+  },
+  {
+    "id": "builtin_text-Q_HJdx",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Ok, um momento. Vou te redirecionar para um atendente."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T00:53:57.140Z",
+    "modifiedOn": "2020-08-28T00:53:57.140Z"
+  },
+  {
+    "id": "builtin_text-8SfKR5",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Perfeito. Por favor, me informe seu Telefone"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T00:57:48.269Z",
+    "modifiedOn": "2020-08-28T00:57:48.269Z"
+  },
+  {
+    "id": "builtin_text-k2IVXT",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Ok, para finalizar, por favor, me informe seu Endereço"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T01:01:03.767Z",
+    "modifiedOn": "2020-08-28T01:01:03.767Z"
+  },
+  {
+    "id": "builtin_text-jNEcB2",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "variations$pt": [],
+      "text$pt": "Ok, chegamos ao fim!\nVocê confirma seus dados abaixo para concluir o cadastro?\nNome Completo: {{temp.nome}}\nTelefone: {{temp.fone}}\nEndereço: {{temp.endereco}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T01:06:16.617Z",
+    "modifiedOn": "2020-08-28T01:06:16.617Z"
+  },
+  {
+    "id": "builtin_text-Dlk2bB",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Falha de cadastro. Tente novamente mais tarde ou contate o administrador."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T01:09:53.260Z",
+    "modifiedOn": "2020-09-16T07:00:34.417Z"
+  },
+  {
+    "id": "builtin_text-cND2cv",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Ok, concluimos seu cadastro! \nGeramos um código de acesso para quando você voltar.\nGuarde com você. É bem importante!!\nCódigo: {{temp.response.body.vulnerable.access_key}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T01:12:54.744Z",
+    "modifiedOn": "2020-09-09T00:40:02.888Z"
+  },
+  {
+    "id": "builtin_text-f-2Zs2",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Ok. Deseja corrigir seus dados fazendo o cadastro de novo?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T01:16:14.490Z",
+    "modifiedOn": "2020-08-28T01:16:14.490Z"
+  },
+  {
+    "id": "builtin_text-1GFLmI",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Desculpe, não compreendi sua decisão. Por favor digite \"sim\" ou \"não\" para se cadastrar."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T01:55:29.455Z",
+    "modifiedOn": "2020-08-28T01:55:29.455Z"
+  },
+  {
+    "id": "builtin_text-fOUoDs",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Desculpe, não compreendi sua decisão. Por favor digite \"sim\" ou \"não\" para confirmar o cadastro."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T02:43:12.426Z",
+    "modifiedOn": "2020-08-28T02:43:12.426Z"
+  },
+  {
+    "id": "builtin_text-iBtkEA",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Falha ao chamar Api"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-09-16T05:20:57.765Z",
+    "modifiedOn": "2020-09-16T05:20:57.765Z"
+  },
+  {
+    "id": "builtin_text-y0NGFf",
+    "formData": {
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "..."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-09-16T05:21:40.309Z",
+    "modifiedOn": "2020-09-16T06:58:41.022Z"
+  }
+]

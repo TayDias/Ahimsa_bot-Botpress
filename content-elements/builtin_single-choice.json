@@ -1,0 +1,107 @@
+[
+  {
+    "id": "builtin_single-choice-jilaOA",
+    "formData": {
+      "choices$pt": [
+        {
+          "title": "Sim",
+          "value": "sim"
+        },
+        {
+          "title": "Não",
+          "value": "nao"
+        }
+      ],
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Olá {{temp.apelido}}! Você deseja se cadastrar na nossa comunidade? Sem pressões, você pode permanecer anônimo se desejar :)"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T01:51:20.626Z",
+    "modifiedOn": "2020-09-16T06:58:07.499Z"
+  },
+  {
+    "id": "builtin_single-choice-CSYwWv",
+    "formData": {
+      "choices$pt": [
+        {
+          "title": "OK!",
+          "value": "ok"
+        },
+        {
+          "title": "Não quero me cadastrar",
+          "value": "Cancelar"
+        }
+      ],
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Certo, vamos fazer o cadastro. Para parar você pode digitar \"cancelar\" a qualquer momento, Ok?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T02:27:01.817Z",
+    "modifiedOn": "2020-08-28T02:27:01.817Z"
+  },
+  {
+    "id": "builtin_single-choice-pjb1ja",
+    "formData": {
+      "choices$pt": [
+        {
+          "title": "Sim, as informações estão certas!",
+          "value": "sim"
+        },
+        {
+          "title": "Não, cancele o cadastro.",
+          "value": "nao"
+        }
+      ],
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Por favor, selecione uma opção."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T02:40:31.636Z",
+    "modifiedOn": "2020-08-28T02:53:13.146Z"
+  },
+  {
+    "id": "builtin_single-choice-4W40M9",
+    "formData": {
+      "choices$pt": [
+        {
+          "title": "Sim",
+          "value": "sim"
+        },
+        {
+          "title": "Não",
+          "value": "nao"
+        }
+      ],
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Ok. Deseja corrigir seus dados fazendo o cadastro de novo?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T02:45:51.578Z",
+    "modifiedOn": "2020-08-28T02:45:51.578Z"
+  },
+  {
+    "id": "builtin_single-choice-qgdPhc",
+    "formData": {
+      "choices$pt": [
+        {
+          "title": "Sim",
+          "value": "sim"
+        },
+        {
+          "title": "Não",
+          "value": "nao"
+        }
+      ],
+      "markdown$pt": true,
+      "typing$pt": true,
+      "text$pt": "Você quer falar com um especialista no assunto?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-28T03:08:03.655Z",
+    "modifiedOn": "2020-08-28T03:08:03.655Z"
+  }
+]

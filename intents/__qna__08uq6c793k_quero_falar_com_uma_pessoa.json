@@ -1,0 +1,18 @@
+{
+  "name": "__qna__08uq6c793k_quero_falar_com_uma_pessoa",
+  "contexts": [
+    "global"
+  ],
+  "utterances": {
+    "pt": [
+      "Quero falar com um profissional",
+      "Quero falar com uma pessoa",
+      "Quero falar com uma pessoa especializada",
+      "Me direcione a um profissional",
+      "Preciso de ajuda profissional",
+      "Preciso falar com alguma pessoa",
+      "Preciso de ajuda de alguém"
+    ]
+  },
+  "slots": []
+}

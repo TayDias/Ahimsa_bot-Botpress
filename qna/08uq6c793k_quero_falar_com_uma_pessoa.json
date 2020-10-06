@@ -1,0 +1,27 @@
+{
+  "id": "08uq6c793k_quero_falar_com_uma_pessoa",
+  "data": {
+    "action": "redirect",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "pt": []
+    },
+    "questions": {
+      "pt": [
+        "Quero falar com um profissional",
+        "Quero falar com uma pessoa",
+        "Quero falar com uma pessoa especializada",
+        "Me direcione a um profissional",
+        "Preciso de ajuda profissional",
+        "Preciso falar com alguma pessoa",
+        "Preciso de ajuda de alguém"
+      ]
+    },
+    "redirectFlow": "Conversation.flow.json",
+    "redirectNode": "RedirectChat-copy",
+    "category": "global"
+  }
+}

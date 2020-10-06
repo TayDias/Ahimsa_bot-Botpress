@@ -1,0 +1,19 @@
+{
+  "name": "presentation",
+  "utterances": {
+    "pt": [
+      "pesentation",
+      "Oi",
+      "Olá",
+      "Ola",
+      "Oii",
+      "Bom dia",
+      "Boa tarde",
+      "Boa noite"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

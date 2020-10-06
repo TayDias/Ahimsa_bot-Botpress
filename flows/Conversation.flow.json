@@ -1,0 +1,143 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "cffd428ee0",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-Help"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "344dc40428",
+      "name": "RedirectChat-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CallAPI-HumanLoop"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Q_HJdx",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"id\",\"value\":\"{{event.payload.id}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "81861dbc73",
+      "name": "EndChat-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Z0kIMV"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-f698d0",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Help",
+      "flow": "skills/choice-f698d0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [sim]",
+          "condition": "temp['skill-choice-ret-rosfd9ry99'] == \"sim\"",
+          "node": "RedirectChat-copy"
+        },
+        {
+          "caption": "User picked [nao]",
+          "condition": "temp['skill-choice-ret-rosfd9ry99'] == \"nao\"",
+          "node": "EndChat-copy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "PickTopicError-copy"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "4530961d64",
+      "name": "PickTopicError-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "#choice-Help"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-1GFLmI"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-7b7dcd",
+      "type": "skill-call",
+      "skill": "CallAPI",
+      "name": "CallAPI-HumanLoop",
+      "flow": "skills/CallAPI-7b7dcd.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.valid",
+          "node": "node-4ff3-copy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.valid",
+          "node": "node-4ff3"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "6291944b08",
+      "name": "node-4ff3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-iBtkEA"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "311a4ddb88",
+      "name": "node-4ff3-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-y0NGFf"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    }
+  ]
+}

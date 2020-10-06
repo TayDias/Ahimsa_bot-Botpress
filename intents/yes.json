@@ -1,0 +1,22 @@
+{
+  "name": "yes",
+  "utterances": {
+    "pt": [
+      "Sim",
+      "Quero",
+      "Ok",
+      "Ta bom",
+      "Ta ok",
+      "Beleza",
+      "Blz",
+      "Certo",
+      "Confirmo",
+      "Confirmado",
+      "Confirmar"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}
